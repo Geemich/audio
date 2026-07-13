@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My first audio website</title>
-    <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Page</title>
     
+    <style>
+        /* This container holds the name and the player together */
         .music-container {
-    position: absolute; /* Allows exact placement */
-    top: 1000px;         /* Move down from the top of the page */
-    left: 100px;       /* Move over from the left side of the page */
-    z-index: 10;       /* Ensures it stays on top of other elements */
-}
-        .music-container2 {
-    position: absolute; /* Allows exact placement */
-    top: 2000px;         /* Move down from the top of the page */
-    left: 100px;       /* Move over from the left side of the page */
-    z-index: 10;       /* Ensures it stays on top of other elements */
-}
-</style>
-</head> 
+            position: absolute;       /* Allows you to move it anywhere */
+            top: 20%;                 /* Adjust distance from the top of the page */
+            left: 10%;                /* Adjust distance from the left of the page */
+            
+            background-color: #f1f1f1; /* Gives the player a clean background */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            text-align: center;       /* Centers the text above the player */
+        }
+
+        /* Styling for the music title */
+        .music-title {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+    </style>
+</head>
 <body>
 
-
-       <div id="music-container" draggable="false" ondragstart="drag(event)">
-  <audio id="my-audio" controls>
-    <source src="He Ain't Finished.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-    <div id="music-container2" draggable="false" ondragstart="drag(event)">
-  <audio id="my-audio" controls>
-    <source src="The Beauty of It All.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
+    <!-- THE MUSIC PLAYER BOX -->
+    <div class="music-container">
+        <!-- The Name of the Song -->
+        <div class="music-title">🎵 The Beauty of It All - Geemich</div>
+        
+        <!-- The HTML Audio Player -->
+        <audio controls>
+            <source src="The Beauty of It All.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
 </body>
 </html>
