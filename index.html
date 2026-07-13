@@ -10,12 +10,24 @@
     left: 100px;       /* Move over from the left side of the page */
     z-index: 10;       /* Ensures it stays on top of other elements */
 }
+        .music-container2 {
+    position: absolute; /* Allows exact placement */
+    top: 1000px;         /* Move down from the top of the page */
+    left: 100px;       /* Move over from the left side of the page */
+    z-index: 10;       /* Ensures it stays on top of other elements */
+}
 </style>
 </head>
 <body>
 
 
        <div id="music-container" draggable="true" ondragstart="drag(event)">
+  <audio id="my-audio" controls>
+    <source src="He Ain't Finished.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+    <div id="music-container2" draggable="true" ondragstart="drag(event)">
   <audio id="my-audio" controls>
     <source src="He Ain't Finished.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
