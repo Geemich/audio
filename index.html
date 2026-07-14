@@ -26,6 +26,26 @@
             margin-bottom: 8px;
             color: #333;
         }
+
+        .music-container2 {
+            position: absolute;       /* Allows you to move it anywhere */
+            top: 20%;                 /* Adjust distance from the top of the page */
+            left: 20%;                /* Adjust distance from the left of the page */
+            
+            background-color: #f1f1f1; /* Gives the player a clean background */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            text-align: center;       /* Centers the text above the player */
+        }
+
+        /* Styling for the music title */
+        .music-title2{
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -33,7 +53,7 @@
     <!-- THE MUSIC PLAYER BOX -->
     <div class="music-container">
         <!-- The Name of the Song -->
-        <div class="music-title">🎵 The Beauty of It All - Geemich</div>
+        <div class="music-title"> The Beauty of It All - Geemich</div>
         
         <!-- The HTML Audio Player -->
         <audio controls>
@@ -41,6 +61,19 @@
             Your browser does not support the audio element.
         </audio>
     </div>
+
+     <!-- THE MUSIC PLAYER BOX -->
+    <div class="music-container2">
+        <!-- The Name of the Song -->
+        <div class="music-title2"> He Ain't Finished - Geemich</div>
+        
+        <!-- The HTML Audio Player -->
+        <audio controls>
+            <source src="He Ain't Finished.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
 
 </body>
 </html>
